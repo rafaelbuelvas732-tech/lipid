@@ -48,23 +48,21 @@ Incluye aquí un **diagrama de flujo** del proceso de unificación o una captura
 📁 **Archivo resultante:**  
 `enhanced_lipid_database.csv`  
 
-## 📊 Distribución de Valores Nulos
+resultados 
+Dimensiones finales: (115138, 35)
+Columnas finales: ['lm_id', 'inchi_key_lipidmaps', 'smiles_lipidmaps', 'source_lipidmaps', 'name', 'systematic_name', 'category', 'main_class', 'exact_mass', 'formula', 'inchi_key_sdf', 'inchi', 'smiles_sdf', 'abbreviation', 'synonyms', 'pubchem_cid', 'chebi_id', 'molwt', 'hmdb_id', 'swisslipids_id', 'sub_class', 'source_sdf', 'headgroup', 'abbrev', 'mass', 'chain_type', 'source', 'morgan_fp', 'mol_weight', 'logp', 'hbd', 'hba', 'rotatable_bonds', 'tpsa', 'heavy_atoms']
 
-<p align="center">
-  <img src="./null_values_analysis.png" width="600"><br>
-  <em>Análisis general de valores nulos</em>
-</p>
+Nuevas columnas añadidas:
+  - morgan_fp: 49443 valores no nulos (42.94%)
+  - mol_weight: 49443 valores no nulos (42.94%)
+  - logp: 49443 valores no nulos (42.94%)
+  - hbd: 49443 valores no nulos (42.94%)
+  - hba: 49443 valores no nulos (42.94%)
+  - rotatable_bonds: 49443 valores no nulos (42.94%)
+  - tpsa: 49443 valores no nulos (42.94%)
+  - heavy_atoms: 49443 valores no nulos (42.94%)
 
-<p align="center">
-  <img src="./nulls_per_record_distribution.png" width="600"><br>
-  <em>Distribución de valores nulos por registro</em>
-</p>
-
-<p align="center">
-  <img src="./remaining_nulls_analysis.png" width="600"><br>
-  <em>Análisis de nulos remanentes después de la limpieza</em>
-</p>
----
+Proceso completado exitosamente!
 
 ### 4️⃣ Limpieza y Depuración de Datos  
 - Se utilizó el script **`cleaned_databank.ipynb`** para:  
@@ -91,15 +89,27 @@ Eliminados:
 - 10 columnas con >95% de valores nulos
 - 68996 registros con >50% de valores nulos
 
-La base de datos limpia se ha guardado en: /home/edwin/proyectos/spent_coffee_grounds/lipids/raw/databases/cleaned_lipid_database.csv
+La base de datos limpia se ha guardado en: la ruta impuesta
 El reporte detallado se ha guardado en: /home/edwin/proyectos/spent_coffee_grounds/lipids/raw/databases/data_cleaning_report.txt
 
 Gráficas generadas:
-1. null_values_analysis.png - Top 20 columnas con más valores nulos
-2. nulls_per_record_distribution.png - Distribución de nulos por registro
-3. remaining_nulls_analysis.png - Top 15 columnas con nulos después de limpieza
-4. null_correlation_heatmap.png - Correlación de nulos entre columnas
+## 📊 Distribución de Valores Nulos
 
+<p align="center">
+  <img src="./null_values_analysis.png" width="600"><br>
+  <em>Análisis general de valores nulos</em>
+</p>
+
+<p align="center">
+  <img src="./nulls_per_record_distribution.png" width="600"><br>
+  <em>Distribución de valores nulos por registro</em>
+</p>
+
+<p align="center">
+  <img src="./remaining_nulls_analysis.png" width="600"><br>
+  <em>Análisis de nulos remanentes después de la limpieza</em>
+</p>
+---
 Proceso completado exitosamente!
 
 
