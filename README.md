@@ -50,11 +50,6 @@ Incluye aquí un **diagrama de flujo** del proceso de unificación o una captura
 
 ## 📊 Distribución de Valores Nulos
 
-p align="center">
-  <img src="./null_correlation_heatmap.png" width="600"><br>
-  <em>Matriz de correlación de valores nulos</em>
-</p>
-
 <p align="center">
   <img src="./null_values_analysis.png" width="600"><br>
   <em>Análisis general de valores nulos</em>
