@@ -33,10 +33,6 @@ La idea principal es construir un **pipeline reproducible** que permita:
   - lipiglu → 3,325 registros  
 - **Primeras 10 columnas:**  
   `['lm_id', 'inchi_key_lipidmaps', 'smiles_lipidmaps', 'obsolete_id', 'source_lipidmaps', 'name', 'systematic_name', 'category', 'main_class', 'exact_mass']`
-
-📌 **Lugar para gráfica:**  
-Incluye aquí un **diagrama de flujo** del proceso de unificación o una captura de las primeras filas de la base de datos usando Pandas (`df.head()`).
-
 ---
 
 ### 3️⃣ Análisis Inicial de la Base de Datos  
