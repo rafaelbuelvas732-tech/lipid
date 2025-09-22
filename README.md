@@ -76,10 +76,30 @@ Incluye aquí un **diagrama de flujo** del proceso de unificación o una captura
 📁 **Archivo resultante:**  
 `cleaned_lipid_database.csv`  
 
-📌 **Lugar para gráfica:**  
-Coloca aquí un **gráfico comparativo** antes/después de la limpieza (por ejemplo, barras mostrando cantidad de nulos eliminados).  
+resultados 
+=== RESUMEN EJECUTIVO ===
 
----
+Base de datos original:
+- Registros: 118462
+- Columnas: 37
 
-## 🖥️ Estructura del Repositorio  
+Después de la limpieza:
+- Registros: 49466 (41.76% retenidos)
+- Columnas: 27 (72.97% retenidas)
+
+Eliminados:
+- 10 columnas con >95% de valores nulos
+- 68996 registros con >50% de valores nulos
+
+La base de datos limpia se ha guardado en: /home/edwin/proyectos/spent_coffee_grounds/lipids/raw/databases/cleaned_lipid_database.csv
+El reporte detallado se ha guardado en: /home/edwin/proyectos/spent_coffee_grounds/lipids/raw/databases/data_cleaning_report.txt
+
+Gráficas generadas:
+1. null_values_analysis.png - Top 20 columnas con más valores nulos
+2. nulls_per_record_distribution.png - Distribución de nulos por registro
+3. remaining_nulls_analysis.png - Top 15 columnas con nulos después de limpieza
+4. null_correlation_heatmap.png - Correlación de nulos entre columnas
+
+Proceso completado exitosamente!
+
 
